@@ -1,0 +1,233 @@
+@charset "utf-8";
+
+/*All pages Common CSS*/
+  * {
+	margin:0px;
+	padding: 0px;
+	box-sizing: border-box;
+	font-family: 'Readex Pro', sans-serif;
+}
+
+ul,ol {
+	list-style: none;
+}
+
+a {
+	text-decoration: none;
+}
+
+
+main{
+	padding: 10px 10px;
+}
+
+
+/*All pages Common CSS - Header Navigation bar */
+/*nav bar*/
+.navbar{
+	display: flex;
+	justify-content: space-between;
+	align-items: center; 
+	background: burlywood; /*header background color*/
+	width: 100%;
+	border-bottom: 0px solid rgb(255, 255, 255); /*just in case*/
+	padding: 0 15px;
+}
+.navbar_logo h1 img {
+	width: 200px;
+	height: 100%;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	margin-left: 30px;
+}
+
+.navbar_menu{
+	display: flex;	
+}
+
+.navbar_menu li a{ 
+	padding: 20px 20px;	/*spacing between lists*/
+	font: bold 15px/1"arial";
+	color: rgb(54, 50, 50);
+	transition: all 0.3s;
+}
+
+.navbar_menu li a:hover {
+	background: rgb(54, 50, 50);
+	color: white;
+	border-radius: 10px;
+}
+
+.navbar_toggleBnt{
+	display: none;
+	position: absolute;
+	right: 24px;
+	padding-top: 24px;
+	font-size: 32px;
+	color: rgb(56, 55, 55);;
+}
+/* nav bar end*/
+
+/*---------Yejin's part to 755 lines----------*/
+/*main page - figure part*/
+
+figure {
+	width: 100%;
+	height: calc(100vh - 120px);
+	position: relative;
+	overflow: hidden;
+}
+
+figure video{
+	object-fit: cover;
+	width: 100%;
+	height: 100%;
+	opacity: 0.9;
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	border-bottom: 1px solid rgb(255, 255, 255); /*bottom of line the video*/
+}
+
+figure .inner {
+	width: 1180px;
+	margin: 0px auto;
+	position: relative;
+} 
+
+
+figure .inner a {
+	display: block;
+	width: 300px;
+	height: 50px;
+	border: 4px solid rgb(104, 101, 101);
+	font: bold 20px/45px "arial";
+	color: rgb(43, 42, 42);
+	text-align: center;
+	letter-spacing: 1px;
+	transition: all 0.9s;
+	margin-top: 580px;
+	background: rgb(223, 218, 228);
+}
+
+figure .inner a:hover {
+	background: rgb(180, 179, 179);
+	color: rgb(114, 46, 46);
+}
+
+/* Main page - Section for events */
+
+section .inner {
+	width: 1180px;
+	margin: 0px auto;
+	margin-top: 50px;
+	margin-bottom: 20px;
+}
+
+section .inner h1 {
+	font: bold 24px/1 "arial";
+	color: #555;
+	text-align: center;
+	margin-bottom: 50px;
+}
+
+section .inner .wrap {
+	width: 100%;
+}
+
+section .inner .wrap::after {
+	content: "";
+	display: block;
+	clear: both;
+}
+
+section .inner .wrap article {
+	width: 280px;
+	float: left;
+	margin-right: 20px;
+}
+
+section .inner .wrap article:last-child {
+	margin-right:0px;
+}
+
+section .inner .wrap article h2{
+	margin-bottom: 10px;
+}
+
+section .inner .wrap article h2 a{
+	font:bold 20px "arial";
+	color: rgb(56, 54, 54);
+	margin-bottom: 10px;
+}
+
+section .inner .wrap article p{
+	font: 15px "arial";
+	color: #777;
+	margin-bottom: 30px;
+}
+
+section .inner .wrap article .pic {
+	width: 230px;
+	height: 230px;
+	border-radius: 50%;
+	margin-bottom: 20px;
+
+}
+
+section .inner .wrap article .pic img{
+	object-fit: cover; 
+	width: 100%;
+	height: 100%;
+}
+
+
+/* All pages - footer */
+
+footer {
+	width: 100%;
+	background : burlywood; /*footer background color*/
+	padding: 50px 0px;
+	
+}
+
+footer .inner {
+	width: 90%;
+	margin: 0px auto;
+}
+
+footer .inner .upper{
+	width: 100%;
+	border-bottom: 1px solid rgb(204, 204, 204); /*footer line */
+	padding-bottom: 20px;
+}
+
+footer .inner .upper::after { 
+	content: "";
+	display: block;
+	clear: both;
+}
+
+footer .inner .upper h1 {
+	float: left;
+	font: bold 24px/1 "arial";
+	color: rgb(31, 4, 4); /*footer logo color*/
+}
+
+footer .inner .lower {
+	width: 100%;
+	padding-top: 20px;
+}
+
+footer .inner .lower h5 {
+	width: 100%;
+	font: 12px/1/3 "arial";
+	color: rgb(15, 2, 2);
+	margin-bottom: 20px;
+}
+
+footer .inner .lower p {
+	width: 100%;
+	font: 12px/1 "arial";
+	color: rgb(10, 1, 1);
+}

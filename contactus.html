@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang = "english">
+	<head>
+		<meta charset = "UTF-8">
+		<meta http-equive = "X-UA-Compatible" content = "IE=edge">
+		<meta name = "viewport" content = "width=device-width, initial-scale=1.0">
+      
+        <link rel ="stylesheet" href="css/external.css">
+        <script src="js/script.js" defer></script> 
+        <script src="https://kit.fontawesome.com/4caa2957f7.js" crossorigin="anonymous"></script>
+        
+
+		<title> Contact us </title>
+
+        <style>
+            /* background image for a Contact us page*/
+            main{
+               background: url('img/Img10.jpg') fixed;
+               background-size: cover;
+           }
+       </style>
+
+	</head>
+	<body>
+    	 <!-- header part : navbar-->
+         <nav class="navbar">
+            <div class="navbar_logo">
+                    <h1>
+                            <a href="index.html">
+                            <img src = "img/logo2.png" alt="this is a logo"></a>
+                    </h1>
+            </div>
+
+            <ul class="navbar_menu">
+                    <li><a href ="aboutus.html">ABOUT</a></li>
+                    <li><a href ="gallery.html">GALLERY</a></li>
+                    <li><a href ="menu.html">MENU</a></li>
+                    <li><a href ="contactus.html">CONTACT US</a></li>
+                    <li><a href ="news.html">NEWS</a></li>
+            </ul>
+
+            <a href="#" class="navbar_toggleBnt"><i class="fas fa-bars"></i></a>
+    </nav>
+        <!-- header part end-->
+        
+
+        <section class="contactus2">
+            <img src="img/contact_us3.jpg">
+        </section>
+
+        <!-- main box start-->
+        <main>
+            <div id="boxes">
+                <a href="#send_email">
+                    <div class="smallbox" id="box1">
+                        <h2> EMAIL US</h2>
+                        <p><img src="img/mail.jpg" alt="" style="width: 50px; border-radius: 50%;" ><b><br>Feel Free To Email Cool Beans!<br>xxx@xxxx.COMUNITY</b></p>                            
+                    </div>
+                </a>
+                <div class="smallbox" id="box2">
+                    <h2>RING US</h2>
+                    <p><img src="img/phone.jpg" alt="" style="width: 50px; border-radius: 50%;" ><b><br>Feel Free To Call Cool Beans!<br>001-000-0000</b></p>
+                </div>
+                <a href="#map_frame">
+                    <div class="smallbox" id="box3">
+                        <h2>OUR LOCATION</h2>
+                        <p><img src="img/location.jpg" alt="" style="width: 50px; border-radius: 50%;" ><b><br>Dublin Coolbean 001 Dublin 00, Dubiln xxx Ireland.</b></p>
+                    </div>
+                </a>
+            </div>
+
+            <h2 class="myfont3">
+                We would love to hear from you! <br>
+            </h2>
+            <h3 class="myfont3">
+                To reach out by phone, please call 001-000-0000.
+            </h3>
+            <p class="myfont3">
+                <br>
+                Please fill out the form below with comments, questions, or just to say hi.<br>
+                <br>
+                We look forward to connecting with you. <br>
+                Please add xxx@xxxx.COMUNITY to your contacts <br>
+                so our reply doesn't land in your spam folder.<br>
+            </p>
+
+            <!-- mail form box start-->
+            <div id="send_email">
+                <form id="mail_form" name="form" onsubmit="return checkAll()" action="mailto:x20103352@student.ncirl.ie" method="post" enctype="text/plain"> <!--method="get"-->
+                    <div class="eachfields">
+                        <h3 class="myfont2">EMail us, Cool beans cafe!</h3>
+                    </div>
+                    <div class="eachfields">
+                        <div class="field_lable">
+                           <label for="field_lable">Name</label>
+                           <span style="color: rgb(187, 48, 23);">*</span>
+                        </div>
+                        <div class="first_last">
+                            <div class="field_lable">
+                               <div><input type="name" name = "fname" placeholder="First Name" required></div>
+                               <div><label for="" id="fName">First</label></div>
+                            </div>
+                            <div class="field_lable">
+                               <div><input type="name" name = "lname" placeholder="Last Name" required></div>
+                               <div><label for="" id="Lname">Last</label></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="eachfields">
+                        <div class="field_lable">
+                            <label for="field_lable">Email</label>
+                            <span style="color: rgb(187, 48, 23);">*</span>
+                        </div>
+                        <div>
+                            <input type="email" name = "mail" size="30" placeholder="Enter your email address" required>
+                        </div>
+                    </div>
+                    <div class="eachfields">
+                        <div class="field_lable">
+                            <label for="field_lable">Message</label>
+                            <span style="color: rgb(187, 48, 23);">*</span>
+                        </div>
+                        <div>
+                            <textarea id="content" name="content" form="form" cols="50" rows="10" placeholder="Enter your message" required></textarea>
+                        </div>
+                    </div>
+                    <div class="eachfields">
+                        <button type="submit">SUBMIT</button>
+                    </div>
+                </form>
+            </div>
+            <!-- mail form box end here-->
+
+            <!-- map, our location-->
+            <h3 class="myfont3">Find out our location!</h3> 
+            <p class="myfont3"> 
+                We are located in city center near IFCS.
+            </p>
+    
+            <div class="map" id="map_frame">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2381.6828970906877!2d-6.245181484008971!3d53.348932382218436!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48670e8cd86e97e7%3A0x6d51b774ee7fa935!2z7JWE7J28656c65OcIOq1reumveuMgO2VmQ!5e0!3m2!1sko!2sie!4v1637285115304!5m2!1sko!2sie" style="border:0;" allowfullscreen="" loading="lazy">
+                </iframe>
+            </div>
+            <!-- map end-->
+        </main>
+        <!-- main box end here-->    
+	</body>
+
+    <!-- footer is out of body tags-->    
+    <footer>
+		<div class="inner">
+		<div class="upper">
+			<h1>COOL BEANS</h1>
+			<ul>
+	</div>
+
+		<div class="lower">
+			<h5>
+				Dublin Coolbean 001 Dublin 00, Dubiln xxx Ireland.
+				<br>TEL : 001-000-0000 Email : xxx@xxxx.COMMUNITY
+			</h5>
+			<p>2021 COOL BEANS &COPY; copyright all right reserved.</p>
+			</div>
+			</div>
+      
+	</footer>
+</html>
